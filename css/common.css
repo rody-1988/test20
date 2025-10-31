@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+:root {
+  --bg-color: #141414;
+  --bg-gradient: linear-gradient(135deg, #0e002e 0%, #1e092b 23%, #320c65 49%, #a01b7c 80%, #c21780 100%);
+  --main-color: #d136d1;
+  --text-color: #fff;
+}
+
+.header,
+.section,
+.footer {
+  padding: 0 2rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+  z-index: 99;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.mv,
+.speaker {
+  background: var(--bg-gradient);
+}
+
+.about,
+.session,
+.footer {
+  background: var(--bg-color);
+}
+
+.request {
+  background-image: url(../img/bg.jpg);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  color: var(--main-color);
+}
+
+p,
+.session__table th {
+  color: var(--text-color);
+}
+
+.tlt__box {
+  width: 100%;
+  padding: 5rem 0 2rem;
+}
+
+.tlt {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.sub__tlt {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.color__big {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/* ボタン */
+.btn {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.btn a,
+.btn__pull {
+  display: block;
+  width: 300px;
+  height: 60px;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: bold;
+  border-radius: 50px;
+  line-height: 25px;
+  background: linear-gradient(135deg, #c41a7f 0%, #664bbf 100%);
+  box-shadow: 0 10px 0 #dd118e;
+  transition: all 0.3s;
+}
+
+.btn a:hover,
+.btn__pull:hover {
+  /* transform: translate3d(0, 4px, 0); */
+  transform: translateY(4px);
+  box-shadow: 0 6px 0 #dd118e;
+}
+
+.page__top {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.page__top a {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #c41a7f 0%, #664bbf 100%);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.page__top span {
+  font-size: 2rem;
+}
